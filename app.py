@@ -205,12 +205,9 @@ def apply_strategy_profile(s, current_price, key):
     s["price_padding"] = prof["padding"]
     s["check_interval"] = prof["interval"]
     return (
-        f"전략: {prof['name']} ({key})
-"
-        f"범위: {int(low):,} ~ {int(high):,}
-"
-        f"N_GRIDS: {prof['n_grids']} | PADDING: {prof['padding']} | INTERVAL: {prof['interval']}s
-"
+        f"전략: {prof['name']} ({key})\\n"
+        f"범위: {int(low):,} ~ {int(high):,}\\n"
+        f"N_GRIDS: {prof['n_grids']} | PADDING: {prof['padding']} | INTERVAL: {prof['interval']}s\\n"
         f"목표가: {prof['target_note']}"
     )
 
