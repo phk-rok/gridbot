@@ -120,7 +120,7 @@ def get_price(symbol):
         use_test = s.get("test_mode", True)
     if use_test or live_feed is None:
         return test_feed.last(symbol)
-    return live_price := live_feed.last(symbol)
+    return live_feed.last(symbol)
 
 # ---------- Utils ----------
 def frange(start, stop, n):
